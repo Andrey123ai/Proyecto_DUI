@@ -30,11 +30,11 @@ class HomePageState extends State<HomePage> {
   String filtro = ''; // Término de búsqueda actual
   final List<Lugar> lugares = [
     Lugar(
-      nombre: 'Ebais',
-      ubicacion: 'Agua Buena',
-      foto: '/ebais.jpg',
-      descripcion: 'abierto de 7 a 5 de la tarde ',
-      numeroTelefonico: '+50687048683',
+      nombre: 'Ebais Agua Buena',
+      ubicacion: 'Agua Buena, Coto Brus',
+      foto: '/EbaisAguaBuena.jpg',
+      descripcion: 'Centro de salud para los habitante de Agua Buena y pueblos aledaños',
+      numeroTelefonico: '+5062734 0195',
       numeroTelefonico2: '987654321',
       Horario: 'Viernes 8:00–17:00 \n ' +
           'Sábado 8:00–12:00 \n ' +
@@ -43,21 +43,100 @@ class HomePageState extends State<HomePage> {
           'Martes 8:00–17:00 \n ' +
           'Miércoles 8:00–17:00 \n ' +
           'Jueves 8:00–17:00',
-      SitioWeb: 'https://edus.ccss.sa.cr/eduscitasweb/',
+      SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/4REt7hCJEae1gRQL6?coh=178573&entry=tt',
     ),
     Lugar(
-      nombre: 'CCSS',
-      ubicacion: 'San vito',
-      foto: 'ruta/a/imagen2.jpg',
-      descripcion: 'siempre disponible para adultos mayores',
-      numeroTelefonico: '987654321',
-      numeroTelefonico2: '987654321',
-      Horario: 'de 7 a 8',
-      SitioWeb: 'url del sitio',
-      UbicacionUrl: 'url de la ubicacion',
+      nombre: 'Ebais Canoas',
+      ubicacion: 'Paso Canoas, Corredores',
+      foto: '/EbaisCanoas.jpg',
+      descripcion: 'Centro de salud para los habitante de Paso Canoas y pueblos aledaños',
+      numeroTelefonico: 'Desconocido', //No aparece información
+      numeroTelefonico2: 'Desconocido',
+      Horario: 'Viernes 8:00–17:00 \n ' +
+          'Sábado 8:00–12:00 \n ' +
+          'Domingo Cerrado \n ' +
+          'Lunes 8:00–17:00 \n ' +
+          'Martes 8:00–17:00 \n ' +
+          'Miércoles 8:00–17:00 \n ' +
+          'Jueves 8:00–17:00',
+      SitioWeb: 'http://www.ccss.sa.cr/',
+      UbicacionUrl: 'https://goo.gl/maps/dA4V9Qdj3L8ym3wJ6',
     ),
-    // Añade más lugares aquí...
+    
+    Lugar(
+      nombre: 'Ebais Los Ángeles',
+      ubicacion: 'Los Ángeles, Perez Zeledón',
+      foto: '/EbaisLosAngelesPZ.jpg',
+      descripcion: 'Centro de salud para los habitante de Los Ángeles y pueblos aledaños',
+      numeroTelefonico: '27853281', 
+      numeroTelefonico2: 'Desconocido',
+      Horario: 'Viernes 7:00–15:00 \n ' +
+          'Sábado Cerrado \n ' +
+          'Domingo Cerrado \n ' +
+          'Lunes 7:00–16:00 \n ' +
+          'Martes 7:00–16:00 \n ' +
+          'Miércoles Cerrado \n ' +
+          'Jueves 7:00–16:00',
+      SitioWeb: 'http://www.ccss.sa.cr/',
+      UbicacionUrl: 'https://goo.gl/maps/64NZwVJaeBLa7AU46',
+    ),
+
+    Lugar(
+      nombre: 'Ebais Ciudad Neily',
+      ubicacion: 'Ciudad Neily, Corredores',
+      foto: '/EbaisCiudadNeily.jpg',
+      descripcion: 'Centro de salud para los habitante de Ciudad Neily y pueblos aledaños',
+      numeroTelefonico: 'Desconocido', 
+      numeroTelefonico2: 'Desconocido',
+      Horario: 'Viernes 7:00–15:00 \n ' +
+          'Sábado Cerrado \n ' +
+          'Domingo Cerrado \n ' +
+          'Lunes 7:00–16:00 \n ' +
+          'Martes 7:00–16:00 \n ' +
+          'Miércoles Cerrado \n ' +
+          'Jueves 7:00–16:00',
+      SitioWeb: 'http://www.ccss.sa.cr/',
+      UbicacionUrl: 'https://goo.gl/maps/64NZwVJaeBLa7AU46',
+    ),
+
+    Lugar(
+      nombre: 'Ebais Rio Claro',
+      ubicacion: 'Rio Claro, Corredores',
+      foto: ' ',
+      descripcion: 'Centro de salud para los habitante de Rio Claro y pueblos aledaños',
+      numeroTelefonico: '27898111', 
+      numeroTelefonico2: 'Desconocido',
+      Horario: 'Viernes 6:00–22:00 \n ' +
+          'Sábado Cerrado \n ' +
+          'Domingo Cerrado \n ' +
+          'Lunes 6:00–22:00 \n ' +
+          'Martes 6:00–22:00 \n ' +
+          'Miércoles 6:00–22:00 \n ' +
+          'Jueves 6:00–22:00',
+      SitioWeb: 'http://www.ccss.sa.cr/',
+      UbicacionUrl: 'https://goo.gl/maps/cSJgTsWYyJRYQJWn6',
+    ),
+
+    Lugar(
+      nombre: 'Ebais San Andrés Alamedas',
+      ubicacion: 'Golfito, Golfito',
+      foto: '/EbaisGolfito.jpg',
+      descripcion: 'Centro de salud para los habitante de Golfito y pueblos aledaños',
+      numeroTelefonico: 'Desconocido', 
+      numeroTelefonico2: 'Desconocido',
+      Horario: 'Viernes 6:00–22:00 \n ' +
+          'Sábado Cerrado \n ' +
+          'Domingo Cerrado \n ' +
+          'Lunes 6:00–22:00 \n ' +
+          'Martes 6:00–22:00 \n ' +
+          'Miércoles 6:00–22:00 \n ' +
+          'Jueves 6:00–22:00',
+      SitioWeb: 'http://www.ccss.sa.cr/',
+      UbicacionUrl: 'https://goo.gl/maps/M7oN32VskfQM9pta9',
+    ),
+
+    
   ];
 
   @override
@@ -72,6 +151,7 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Descubre tu Ciudad'),
         centerTitle: true,
+        backgroundColor: Color.fromARGB(255, 163, 30 ,51)
       ),
       body: Column(
         children: [
@@ -106,7 +186,7 @@ class HomePageState extends State<HomePage> {
                     child: Padding(
                         padding: const EdgeInsets.all(2),
                         child: Card(
-                          color: Colors.grey,
+                          color: Color.fromARGB(255, 41, 54, 88),
                           child: Container(
                             constraints: BoxConstraints(
                               minHeight: 50,
@@ -123,7 +203,7 @@ class HomePageState extends State<HomePage> {
                                           lugar.nombre,
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
-                                            color: Colors.black,
+                                            color: Colors.white,
                                             fontSize: 20,
                                           ),
                                         ),
@@ -132,22 +212,22 @@ class HomePageState extends State<HomePage> {
                                   ),
                                   Row(
                                     children: [
-                                      Image.asset(
-                                        lugar.foto,
-                                        width: 200,
-                                        height: 200,
-                                        fit: BoxFit.cover,
+                                      Text(
+                                        "Ubicación: " + lugar.ubicacion,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                        ),
                                       ),
                                     ],
                                   ),
                                   Row(
                                     children: [
-                                      Text(
-                                        "Ubicación: " + lugar.ubicacion,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 15,
-                                        ),
+                                      Image.asset(
+                                        lugar.foto,
+                                        width: 200,
+                                        height: 200,
+                                        fit: BoxFit.cover,
                                       ),
                                     ],
                                   ),
