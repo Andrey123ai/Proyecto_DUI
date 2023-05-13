@@ -33,7 +33,8 @@ class HomePageState extends State<HomePage> {
       nombre: 'Ebais Agua Buena',
       ubicacion: 'Agua Buena, Coto Brus',
       foto: '/EbaisAguaBuena.jpg',
-      descripcion: 'Centro de salud para los habitante de Agua Buena y pueblos aledaños',
+      descripcion:
+          'Centro de salud para los habitante de Agua Buena y pueblos aledaños',
       numeroTelefonico: '+5062734 0195',
       numeroTelefonico2: '987654321',
       Horario: 'Viernes 8:00–17:00 \n ' +
@@ -50,7 +51,8 @@ class HomePageState extends State<HomePage> {
       nombre: 'Ebais Canoas',
       ubicacion: 'Paso Canoas, Corredores',
       foto: '/EbaisCanoas.jpg',
-      descripcion: 'Centro de salud para los habitante de Paso Canoas y pueblos aledaños',
+      descripcion:
+          'Centro de salud para los habitante de Paso Canoas y pueblos aledaños',
       numeroTelefonico: 'Desconocido', //No aparece información
       numeroTelefonico2: 'Desconocido',
       Horario: 'Viernes 8:00–17:00 \n ' +
@@ -63,13 +65,13 @@ class HomePageState extends State<HomePage> {
       SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/dA4V9Qdj3L8ym3wJ6',
     ),
-    
     Lugar(
       nombre: 'Ebais Los Ángeles',
       ubicacion: 'Los Ángeles, Perez Zeledón',
       foto: '/EbaisLosAngelesPZ.jpg',
-      descripcion: 'Centro de salud para los habitante de Los Ángeles y pueblos aledaños',
-      numeroTelefonico: '27853281', 
+      descripcion:
+          'Centro de salud para los habitante de Los Ángeles y pueblos aledaños',
+      numeroTelefonico: '27853281',
       numeroTelefonico2: 'Desconocido',
       Horario: 'Viernes 7:00–15:00 \n ' +
           'Sábado Cerrado \n ' +
@@ -81,13 +83,13 @@ class HomePageState extends State<HomePage> {
       SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/64NZwVJaeBLa7AU46',
     ),
-
     Lugar(
       nombre: 'Ebais Ciudad Neily',
       ubicacion: 'Ciudad Neily, Corredores',
       foto: '/EbaisCiudadNeily.jpg',
-      descripcion: 'Centro de salud para los habitante de Ciudad Neily y pueblos aledaños',
-      numeroTelefonico: 'Desconocido', 
+      descripcion:
+          'Centro de salud para los habitante de Ciudad Neily y pueblos aledaños',
+      numeroTelefonico: 'Desconocido',
       numeroTelefonico2: 'Desconocido',
       Horario: 'Viernes 7:00–15:00 \n ' +
           'Sábado Cerrado \n ' +
@@ -99,13 +101,13 @@ class HomePageState extends State<HomePage> {
       SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/64NZwVJaeBLa7AU46',
     ),
-
     Lugar(
       nombre: 'Ebais Rio Claro',
       ubicacion: 'Rio Claro, Corredores',
       foto: ' ',
-      descripcion: 'Centro de salud para los habitante de Rio Claro y pueblos aledaños',
-      numeroTelefonico: '27898111', 
+      descripcion:
+          'Centro de salud para los habitante de Rio Claro y pueblos aledaños',
+      numeroTelefonico: '27898111',
       numeroTelefonico2: 'Desconocido',
       Horario: 'Viernes 6:00–22:00 \n ' +
           'Sábado Cerrado \n ' +
@@ -117,13 +119,13 @@ class HomePageState extends State<HomePage> {
       SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/cSJgTsWYyJRYQJWn6',
     ),
-
     Lugar(
       nombre: 'Ebais San Andrés Alamedas',
       ubicacion: 'Golfito, Golfito',
       foto: '/EbaisGolfito.jpg',
-      descripcion: 'Centro de salud para los habitante de Golfito y pueblos aledaños',
-      numeroTelefonico: 'Desconocido', 
+      descripcion:
+          'Centro de salud para los habitante de Golfito y pueblos aledaños',
+      numeroTelefonico: 'Desconocido',
       numeroTelefonico2: 'Desconocido',
       Horario: 'Viernes 6:00–22:00 \n ' +
           'Sábado Cerrado \n ' +
@@ -135,8 +137,6 @@ class HomePageState extends State<HomePage> {
       SitioWeb: 'http://www.ccss.sa.cr/',
       UbicacionUrl: 'https://goo.gl/maps/M7oN32VskfQM9pta9',
     ),
-
-    
   ];
 
   @override
@@ -149,10 +149,9 @@ class HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Descubre tu Ciudad'),
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 163, 30 ,51)
-      ),
+          title: Text('Descubre tu Ciudad'),
+          centerTitle: true,
+          backgroundColor: Color.fromARGB(255, 163, 30, 51)),
       body: Column(
         children: [
           Padding(
@@ -276,8 +275,8 @@ class DetallesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(lugar.nombre),
-      ),
+          title: Text(lugar.nombre),
+          backgroundColor: Color.fromARGB(255, 163, 30, 51)),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(children: [
