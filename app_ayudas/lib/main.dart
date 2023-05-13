@@ -277,6 +277,7 @@ class DetallesPage extends StatelessWidget {
       appBar: AppBar(
           title: Text(lugar.nombre),
           backgroundColor: Color.fromARGB(255, 163, 30, 51)),
+          
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(children: [
